@@ -1,9 +1,9 @@
 import React from 'react'
 import './App.css';
-import UseStateObject from './components/UseStateObject';
+import CleanUp from './components/CleanUp'; 
 const App = () => {
   return (
-    <div className='app'><UseStateObject/></div>
+    <div className='app'><CleanUp/></div>
   )
 }
 
