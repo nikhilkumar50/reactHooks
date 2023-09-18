@@ -1,9 +1,12 @@
 import React from 'react'
 import './App.css';
-import CleanUp from './components/CleanUp'; 
+import UseReducer from './components/UseReducer';
 const App = () => {
+  
+
   return (
-    <div className='app'><CleanUp/></div>
+    
+    <div className='app'><UseReducer /></div>
   )
 }
 
