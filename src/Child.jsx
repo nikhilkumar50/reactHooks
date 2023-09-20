@@ -1,15 +1,14 @@
 import React from "react";
-import { useContext } from "react";
-import { AppContext } from "./components/UserContext";
+import { useDataContext } from "./components/UserContext";
 
 const Child = () => {
   // const {name,age}=user; 
-  const userData=useContext(AppContext);
+  const userData=useDataContext();
   console.log(userData);
 
   return (
     <div>
-      Child = My name is  and my age is .{" "}
+      Child = My name is {userData.name}  and my age is{userData.age} .{" "}
     </div>
   );
 };

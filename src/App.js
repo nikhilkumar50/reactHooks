@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css';
-import UseRefhook from './components/UseRefhook';
+import Parent from './Parent';
 const App = () => {
   
 
   return (
     
-    <div className='app'><UseRefhook/></div>
+    <div className='app'><Parent/></div>
   )
 }
 
