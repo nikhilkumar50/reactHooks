@@ -2,23 +2,23 @@ import { useReducer ,useState} from "react";
 import styled from "styled-components";
 import { BiPlusMedical } from "react-icons/bi";
 import { FaMinus } from "react-icons/fa";
-
+import Reducer from "./Reducer";
 const initialValue=0;
 
 const UseReducer = () => {
 
- const[count,dispatch]=useReducer(reducer,initialValue);
-  
+ const[count,dispatch]=useReducer(Reducer,initialValue);
+   
 
   return (
     <>
       <Wrapper>
         <div className="container">
-          <button >
+          <button onClick={()=>dispatch({type:"INC"})} >
             <BiPlusMedical className="icon" />
           </button>
           <h1>{count}</h1>
-          <button >
+          <button onClick={()=>dispatch({type:"DEC"})}>
             <FaMinus className="icon minus_icon" />
           </button>
         </div>

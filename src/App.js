@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css';
-import UseReducer from './components/UseReducer';
+import UseRefhook from './components/UseRefhook';
 const App = () => {
   
 
   return (
     
-    <div className='app'><UseReducer /></div>
+    <div className='app'><UseRefhook/></div>
   )
 }
 
